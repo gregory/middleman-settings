@@ -1,15 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 
+require 'middleman-settings/version'
+
 Gem::Specification.new do |s|
   s.name        = "middleman-settings"
-  s.version     = "0.0.1"
+  s.version     = ::Middleman::Settings::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gregory Horion"]
   s.email       = ["greg2502@gmail.com"]
   s.homepage    = "http://gregory.io"
-  # s.summary     = %q{A short summary of your extension}
-  # s.description = %q{A longer description of your extension}
+  s.summary     = %q{Config files management for middleman http://middlemanapp.com}
+  s.description = %q{This Gem will let you use settings from config files everywhere}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
